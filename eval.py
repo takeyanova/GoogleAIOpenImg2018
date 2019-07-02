@@ -19,7 +19,7 @@ flags.DEFINE_string('checkpoint_dir', '../input/model71/faster_rcnn_inception_re
                     'Directory containing checkpoints to evaluate, typically '
                     'set to `train_dir` used in the training job.')
 flags.DEFINE_string('imgs_dir', '../input/open-images-2019-object-detection/test','')
-flags.DEFINE_string('eval_dir', '',
+flags.DEFINE_string('eval_dir', '../output/',
                     'Directory to write eval summaries to.')
 flags.DEFINE_string('pipeline_config_path', '../input/model71/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28/pipeline.config',
                     'Path to a pipeline_pb2.TrainEvalPipelineConfig config '

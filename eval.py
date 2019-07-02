@@ -39,7 +39,7 @@ def main(unused_argv):
     model_fn = functools.partial(model_builder.build, model_config=model_config, is_training=False)
 
 
-    label_map = label_map_util.load_labelmap(input_config.label_map_path)
+    label_map = label_map = label_map_util.load_labelmap('../input/oidv4label/oid_v4_label_map.pbtxt')
     max_num_classes = max([item.id for item in label_map.item])
     categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes, False)
 

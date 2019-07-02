@@ -15,13 +15,13 @@ tf.logging.set_verbosity(0)
 
 flags = tf.app.flags
 
-flags.DEFINE_string('checkpoint_dir', '/home/chamo/Documents/work/keras-yolo3/logs/000/trained_weights_final.h5',
+flags.DEFINE_string('checkpoint_dir', '../input/model71/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28/model.ckpt.meta',
                     'Directory containing checkpoints to evaluate, typically '
                     'set to `train_dir` used in the training job.')
-flags.DEFINE_string('imgs_dir', '/media/chamo/e9cbf274-e538-4ccc-adbb-16cc0932f014/validation','')
+flags.DEFINE_string('imgs_dir', '../input/open-images-2019-object-detection/test','')
 flags.DEFINE_string('eval_dir', '',
                     'Directory to write eval summaries to.')
-flags.DEFINE_string('pipeline_config_path', '',
+flags.DEFINE_string('pipeline_config_path', '../input/model71/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28/pipeline.config',
                     'Path to a pipeline_pb2.TrainEvalPipelineConfig config '
                     'file. If provided, other configs are ignored')
 FLAGS = flags.FLAGS
